@@ -1,5 +1,5 @@
 <?php
-define('BOT_TOKEN', '**TOKEN**');
+define('BOT_TOKEN', '287956512:AAE2pWo5Lxkw740iOv5t-2z8Ggu6eIp_A2s');
 define('API_URL', 'https://api.telegram.org/bot'.BOT_TOKEN.'/');
 
 function apiRequestWebhook($method, $parameters) {
@@ -115,7 +115,7 @@ function processMessage($message) {
   // process incoming message
   $boolean = file_get_contents('booleans.txt');
   $booleans= explode("\n",$boolean);
-  $admin = **ADMIN**;
+  $admin = 132663128;
   $message_id = $message['message_id'];
   $rpto = $message['reply_to_message']['forward_from']['id'];
   $chat_id = $message['chat']['id'];
@@ -134,7 +134,7 @@ $substr = substr($text, 0, 28);
 apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => $pmembersiddd[1] ,"parse_mode" =>"HTML"));	
 }else{
   
-apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "<b>You Are Banned</b>🚫
+apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "<b>@Us_Nn</b>🚫
 Get Out Of Here Idiot🖕
 --------------------------------
 شما در لیست سیاه قرار دارید 🚫
